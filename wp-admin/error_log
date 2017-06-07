@@ -1,0 +1,12 @@
+[02-Jun-2017 21:46:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_cache_debug() in /home/anapolweiss/public_html/wp-content/plugins/wp-super-cache/wp-cache.php:2770
+Stack trace:
+#0 /home/anapolweiss/public_html/wp-content/plugins/wp-super-cache/wp-cache.php(2443): wp_cache_clean_cache('wp-cache-')
+#1 /home/anapolweiss/public_html/wp-content/plugins/wp-super-cache/wp-cache.php(818): wp_cache_files()
+#2 /home/anapolweiss/public_html/wp-includes/class-wp-hook.php(298): wp_cache_manager('')
+#3 /home/anapolweiss/public_html/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /home/anapolweiss/public_html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /home/anapolweiss/public_html/wp-admin/admin.php(222): do_action('settings_page_w...')
+#6 /home/anapolweiss/public_html/wp-admin/options-general.php(10): require_once('/home/anapolwei...')
+#7 {main}
+  thrown in /home/anapolweiss/public_html/wp-content/plugins/wp-super-cache/wp-cache.php on line 2770
+[02-Jun-2017 22:38:14 UTC] WordPress database error Unknown column 'wp_' in 'field list' for query SELECT wp_
