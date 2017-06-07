@@ -1332,17 +1332,21 @@ header {
 						display: block;
 					}
 					span.h1first {
-						
+						padding-left:35px;
+						background: #f0f1f2;
+						position: relative;
+						z-index:5;
+						margin-left: 120px;
 					}
 					span.h1middle {
-						margin-left:170px;
+						margin-left:0px;
 						background: $greylight;
 						position: relative;
 						z-index:5;
 						padding-left:30px;
 					}
 					span.h1end {
-						margin-left:120px;
+						margin-left: 321px;
 					}
 				}
 				span.header_line {
@@ -1354,6 +1358,7 @@ header {
 					top:130px;
 					left:0;
 					transition: all 1.2s ease-in-out;
+					top: 38px;
 				}
 				span.header_line.fadein {
 					width:60%;
@@ -1418,8 +1423,8 @@ header {
 					span {
 						font-family: $butler;
 						color:$orange;
-						font-size:25px;
-						line-height: 34px;
+						font-size:28px;
+						line-height: 41px;
 						padding:0px 0px 0px 55px;
 						display: block;
 					}
@@ -2162,6 +2167,21 @@ section.blog {
 
 /* Second About Section */
 
+span.col_title {
+				color:$orange;
+				font-size: 18px;
+				font-family: $helvetica;
+				letter-spacing: 5.2px;
+				text-transform: uppercase;
+			}
+			span.col_greyline {
+				width:34px;
+				height:1px;
+				background: $greydark;
+				display: block;
+				margin-top:14px;
+				margin-bottom: 24px;
+			}
 
 
 .second_about {
@@ -2247,6 +2267,9 @@ section.blog {
 }
 
 
+
+
+
 .second_about_right {
 	width:61%;
 	float:right;
@@ -2314,24 +2337,12 @@ section.blog {
 				float:right;
 				padding-top:66px;
 			}
-			span.col_title {
-				color:$orange;
-				font-size: 18px;
-				font-family: $helvetica;
-				letter-spacing: 5.2px;
-				text-transform: uppercase;
-			}
-			span.col_greyline {
-				width:34px;
-				height:1px;
-				background: $greydark;
-				display: block;
-				margin-top:14px;
-				margin-bottom: 24px;
-			}
+			
 		}
 	}
 }
+
+
 
 
 .about_arrows_count.fadein {
@@ -6233,11 +6244,11 @@ body.page-template-page-results {
 						
 					}
 					span.h1end {
-						
+						margin-left: 251px;
 					}
 				}
 				span.header_line {
-					top:90px;
+					top:23px;
 				}
 			}
 			img.content_img {
@@ -6536,7 +6547,8 @@ a.case_results_button {
 				float:none
 			}
 			&:last-of-type {
-				float:none
+				float:none;
+				padding-top:0;
 			}
 			span.col_title {
 				
@@ -8800,8 +8812,11 @@ header {
 				overflow: visible;
 				h1 {
 					float:left;
-					width:350px;
-					margin-left:7%;
+					max-width: 365px;
+					width:100%;
+					font-size: 38px;
+					 margin-left: 13%;
+					 line-height: 45px;
 					span.h1first, span.h1middle, span.h1end {
 						
 					}
@@ -8811,18 +8826,20 @@ header {
 					}
 					span.h1middle {
 						margin-left: 0px;
+						display: none;
 						display: inline;
 						padding-left:0;
 						background: transparent;
 						span.tablet {
-							margin-left:70px;
+							margin-left:0px;
 							background: $greylight;
-							padding-left:20px;
+							padding-left:0px;
+							
 						}
 					}
 					span.h1end {
 						display: inline;
-						margin-left:0;
+						margin-left: 145px;
 					}
 				}
 				span.header_line {
@@ -11581,9 +11598,11 @@ img.aligncenter {
 			.about_title {
 				
 				h1 {
+/*
 					font-size: 47px;
 					line-height: 48px;
 					margin-left: 10%;
+*/
 					span.h1first, span.h1middle, span.h1end {
 						
 					}
@@ -11602,7 +11621,7 @@ img.aligncenter {
 					}
 				}
 				span.header_line {
-					 top: 73px;
+// 					 top: 73px;
 				}
 			}
 			img.content_img {
@@ -12157,6 +12176,22 @@ header {
 		
 		
 		/* Second About Section */
+		
+		
+		span.col_title {
+				font-size:16px;
+				letter-spacing: 6px;
+				margin-bottom:12px;
+				display: block;
+			}
+			span.col_greyline {
+				margin-bottom: 17px;
+				display: none;
+			}
+			
+			p.mobile {
+				margin-top:-40px;
+			}
 
 
 
@@ -12234,16 +12269,7 @@ header {
 			&:last-of-type {
 				
 			}
-			span.col_title {
-				font-size:16px;
-				letter-spacing: 6px;
-				margin-bottom:12px;
-				display: block;
-			}
-			span.col_greyline {
-				margin-bottom: 17px;
-				display: none;
-			}
+			
 		}
 	}
 }
@@ -13357,13 +13383,17 @@ background:url(images/tablet_header_bg.jpg) top center;
 			.about_title {
 				
 				h1 {
-					
+					font-size:48px;
 					margin-left: 20px;
+					max-width: 429px;
+					margin-left: 36px;
+					line-height: 51px;
 					span.h1first, span.h1middle, span.h1end {
 						
 					}
 					span.h1first {
-						
+						 padding-left: 16px;
+						  margin-left: 33px;
 						
 					}
 					span.h1middle {
@@ -13373,11 +13403,11 @@ background:url(images/tablet_header_bg.jpg) top center;
 						}
 					}
 					span.h1end {
-						
+						margin-left: 176px;
 					}
 				}
 				span.header_line {
-					 top: 73px;
+					 top: 19px;
 					 width:30%;
 				}
 			}
@@ -15342,6 +15372,166 @@ body.page-template-page-results {
 			background:url(images/mobile_header_bg.jpg) center center;
 			background-size: cover;
 		}
+		
+		
+		
+		
+		
+		/* About */
+
+.about {
+	
+	.about_inner {
+		
+		.about_left {
+			
+			.about_title {
+				
+				h1 {
+					font-size:38px;
+					 margin-left: 0; 
+					 line-height: 45px;
+					span.h1first, span.h1middle, span.h1end {
+						
+					}
+					span.h1first {
+						
+						
+					}
+					span.h1middle {
+						 margin-left: 25px;
+						span.tablet {
+							
+						}
+					}
+					span.h1end {
+						 margin-left: 161px;
+					}
+				}
+				span.header_line {
+					
+				}
+			}
+			img.content_img {
+				
+			}
+		}
+		.about_right {
+			
+			.content {
+				
+				p {
+					
+				}
+				.horizontal_greyline {
+						
+						
+					}
+				.quote_wrapper {
+					
+					.greyline {
+						
+					}
+					span {
+						
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+		
+		
+		
+.about  {
+	.about_inner {
+		.about_right {
+			 margin-top: 3opx;
+		}
+	}
+	
+}  
+   
+   
+		
+
+		
+		
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 360px) {
+	
+	
+	/* About */
+
+.about {
+	
+	.about_inner {
+		
+		.about_left {
+			
+			.about_title {
+				
+				h1 {
+					font-size:35px; 
+					line-height: 46px;
+					span.h1first, span.h1middle, span.h1end {
+						
+					}
+					span.h1first {
+						margin-left: 50px;
+						
+					}
+					span.h1middle {
+						 
+						span.tablet {
+							
+						}
+					}
+					span.h1end {
+						 margin-left: 156px;
+					}
+				}
+				span.header_line {
+					
+				}
+			}
+			img.content_img {
+				
+			}
+		}
+		.about_right {
+			
+			.content {
+				
+				p {
+					
+				}
+				.horizontal_greyline {
+						
+						
+					}
+				.quote_wrapper {
+					
+					.greyline {
+						
+					}
+					span {
+						
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+
+	
 	
 } /* Media Query */
 
